@@ -22,7 +22,7 @@ client.on('ready', () => {
 		
 	
 		let online = ytspeak.members.filter(member => member.user.presence.status !== 'offline');
-	var hr = new Date().getHours() +2
+	var hr = new Date().getHours() +1
 	if(hr == 25) hr = 1
 		
 		if(high<online.size-ytspeak.members.filter(m => m.user.bot).size) {
